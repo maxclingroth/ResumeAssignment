@@ -1,0 +1,75 @@
+/*
+Max Clingroth
+1/24/23 
+*/
+
+/* Colors:
+#5C2751 - maroon
+#6457A6 - dark purple
+#9DACFF - light purple
+#1C3D5F - indigo blue
+#88A5AA - pewter blue */
+
+/* Global Styles
+------------------------------- */
+body {
+    color: black;
+}
+
+img {
+    width: 250px;
+}
+
+a {
+    color: #FFBB7B;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Profile
+------------------------------- */
+header {
+    background: #88A5AA;
+}
+
+/* Projects
+------------------------------- */
+.projects {
+    background: #6457A6;
+    color: #FFF5F8;
+}
+
+.projects .btn {
+    color: #FFF5F8;
+    background: #5C2751;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.projects .btn:hover {
+    background: rgba(92, 39, 81, 80%);
+}
+
+
+/* Work Experience
+------------------------------- */
+.work-experience {
+    background: #9DACFF;
+}
+
+/* Education
+------------------------------- */
+.education {
+    background: #5C2751;
+    color: #FFF5F8;
+}
+
+/* Contact info
+------------------------------- */
+footer {
+    background: #1C3D5F;
+    color: #FFF5F8;
+}
