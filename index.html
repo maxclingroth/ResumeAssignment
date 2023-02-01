@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Max Clingroth- Resume</title>
   </head>
@@ -10,78 +13,88 @@
     <main>
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
       <header>
-        <h1>Max Clingroth</h1>
-        <h2>Web Developer</h2>
+        <div class="content-wrap">
+          <h1>Max Clingroth</h1>
+          <h2>Web Developer</h2>
 
-        <p>An aspiring web developer with experience working with HTML, CSS, Python, C++, and various frameworks. I have taken classes at Wake Tech Community College and look forward to working on more projects in the future.</p>
+          <p>An aspiring web developer with experience working with HTML, CSS, Python, C++, and various frameworks. I have taken classes at Wake Tech Community College and look forward to working on more projects in the future.</p>
+        </div>
       </header>
 
       <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
       <section class="projects">
-        <h2>Featured Projects</h2>
-        <p>View selected projects below. More information can be found at <a href="https://github.com/maxclingroth">github.com/maxclingroth</a>.</p>
+        <div class="content-wrap">
+          <h2>Featured Projects</h2>
+          <p>View selected projects below. More information can be found at <a href="https://github.com/maxclingroth">github.com/maxclingroth</a>.</p>
 
-        <!-- Copy the whole <section> block to add more projects. -->
-        <section>
-          <h3>Paint Clone</h3>
-          <img src="images/paint-clone.jpg" alt="paint program">
-          <p>A makeshift paint program made in Python using the TKinter module. I programmed this on my own as practice working with Python.</p>
-          <a class="btn" href="https://github.com/maxclingroth/Paint-Clone" target="_blank">View project / case study</a>
-        </section>
+          <!-- Copy the whole <section> block to add more projects. -->
+          <section class="project-item">
+            <img src="images/paint-clone.jpg" alt="paint program">
+            <h3>Paint Clone</h3>
+            <p>A makeshift paint program made in Python using the TKinter module. I programmed this on my own as practice working with Python.</p>
+            <a class="btn" href="https://github.com/maxclingroth/Paint-Clone" target="_blank">View project / case study</a>
+          </section>
 
-        <section>
-          <h3>Vicious Cycles Website</h3>
-          <img src="images/vicious-cycles.jpg" alt="vicious cycles website">
-          <p>A website for a fictional company Vicious Cycles that I coded for an HTML class project. It contains multiple pages and is coded using HTML and CSS.</p>
-          <a class="btn" href="https://github.com/maxclingroth/ViciousCyclesProject" target="_blank">View project / case study</a>
-        </section>
+          <section class="project-item">
+            <img src="images/vicious-cycles.jpg" alt="vicious cycles website">
+            <h3>Vicious Cycles Website</h3>
+            <p>A website for a fictional company Vicious Cycles that I coded for an HTML class project. It contains multiple pages and is coded using HTML and CSS.</p>
+            <a class="btn" href="https://github.com/maxclingroth/ViciousCyclesProject" target="_blank">View project / case study</a>
+          </section>
 
-        <section>
-          <h3>Tic-Tac-Toe</h3>
-          <img src="images/tic-tac-toe.jpg" alt="tic-tac-toe program">
-          <p>A tic-tac-toe program coded in Python that allows two users to play tic-tac-toe against each other and saves games in a database. The database can then be accessed using the program. The program was coded for a Python class.</p>
-          <a class="btn" href="https://github.com/maxclingroth/CSC_120_Tic_Tac_Toe" target="_blank">View project / case study</a>
-        </section>
+          <section class="project-item">
+            <img src="images/tic-tac-toe.jpg" alt="tic-tac-toe program">
+            <h3>Tic-Tac-Toe</h3>
+            <p>A tic-tac-toe program coded in Python that allows two users to play tic-tac-toe against each other and saves games in a database. The database can then be accessed using the program. The program was coded for a Python class.</p>
+            <a class="btn" href="https://github.com/maxclingroth/CSC_120_Tic_Tac_Toe" target="_blank">View project / case study</a>
+          </section>
+        </div>
         <!-- End of Project block. -->
       </section>
 
       <!-- ***********************  WORK EXPERIENCE  *********************** -->
       <section class="work-experience">
-        <h2>Work Experience</h2>
-        <p>I have several years of management experience and have worked with code for several years as well.</p>
+        <div class="content-wrap">
+          <h2>Work Experience</h2>
+          <p>I have several years of management experience and have worked with code for several years as well.</p>
 
-        <!-- Copy this whole <section> block to add more jobs. -->
-        <section>
-          <h3>Shift Lead</h3>
-          <p>Starbucks</p>
-          <p>8/10/2020 - </p>
-          <p>Lead partners in a fast-paced work environment and ensured customer satisfaction. Worked extensively with customers and partners, giving me an experienced insight into managing people.</p>
-        </section>
+          <!-- Copy this whole <section> block to add more jobs. -->
+          <section>
+            <h3>Shift Lead</h3>
+            <p>Starbucks</p>
+            <p>8/10/2020 - </p>
+            <p>Lead partners in a fast-paced work environment and ensured customer satisfaction. Worked extensively with customers and partners, giving me an experienced insight into managing people.</p>
+          </section>
+        </div>
         <!-- End of Job block. -->
       </section>
 
       <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
       <section class="education">
-        <h2>Education</h2>
+        <div class="content-wrap">
+          <h2>Education</h2>
 
-        <!-- Copy this whole <section> block to add more schools. -->
-        <section>
-          <h3>Wake Tech Community College</h3>
-          <p>Computer Programming and Development 2021 - </p>
-          <p>Several years of working with computers and coding.</p>
-        </section>
+          <!-- Copy this whole <section> block to add more schools. -->
+          <section>
+            <h3>Wake Tech Community College</h3>
+            <p>Computer Programming and Development 2021 - </p>
+            <p>Several years of working with computers and coding.</p>
+          </section>
+        </div>
         <!-- End of School block. -->
       </section>
 
       <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
       <footer>
-        <h2>Let's Keep in Touch!</h2>
+        <div class="content-wrap">
+          <h2>Let's Keep in Touch!</h2>
 
-        <!-- Social media and contact links. Add or remove any networks. -->
-        <ul>
-          <li><a href="mailto:mjclingroth@my.waketech.edu">mjclingroth@my.waketech.edu</a></li>
-          <li><a href="https://github.com/maxclingroth" target="_blank">github.com/maxclingroth</a></li>
-        </ul>
+          <!-- Social media and contact links. Add or remove any networks. -->
+          <ul>
+            <li><a href="mailto:mjclingroth@my.waketech.edu">mjclingroth@my.waketech.edu</a></li>
+            <li><a href="https://github.com/maxclingroth" target="_blank">github.com/maxclingroth</a></li>
+          </ul>
+        </div>
       </footer>
     </main>
   </body>

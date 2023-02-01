@@ -12,8 +12,21 @@ Max Clingroth
 
 /* Global Styles
 ------------------------------- */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
 }
 
 img {
@@ -26,6 +39,28 @@ a {
 
 a:hover {
     text-decoration: none;
+}
+
+h1 {
+    font-size: 60px;
+    text-shadow: 4px 3px 6px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h1, h2 {
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.content-wrap {
+    width: 75%;
+    margin: 0 auto;
+    padding: 60px;
 }
 
 /* Profile
@@ -41,16 +76,32 @@ header {
     color: #FFF5F8;
 }
 
+h3 {
+    margin-top: 0;
+}
+
 .projects .btn {
     color: #FFF5F8;
     background: #5C2751;
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
+    display: inline-block;
 }
 
 .projects .btn:hover {
     background: rgba(92, 39, 81, 80%);
+}
+
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed black;
+    padding: 20px 0;
+}
+
+.project-item img {
+    float: left;
+    margin-right: 20px;
 }
 
 
