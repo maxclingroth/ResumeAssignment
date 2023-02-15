@@ -63,10 +63,86 @@ h1, h2 {
     padding: 60px;
 }
 
+/* Navigation
+------------------------------ */
+#nav-menu {
+    display: none;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: #9DACFF;
+    padding-left: 0;
+    width: 150px;
+    position: relative;
+    right: 100px;
+}
+
+.dropdown {
+    display: none;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: #9DACFF;
+    padding-left: 0;
+    position: absolute;
+    right: 149px;
+    top: 0;
+    width: 100px;
+}
+
+nav {
+    float: right;
+    text-align: center;
+    width: 10%;
+    margin: 70px 5% 0 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+#nav-menu li {
+    background-color: #9DACFF;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav-label:hover ul {
+    display: inline-block;
+}
+
+#nav-label:hover .dropdown {
+    display: none;
+}
+
+#nav-menu li:hover .dropdown {
+    display: inline-block;
+}
+
+#nav-menu li:hover {
+    color: #1C3D5F;
+}
+
+#nav-menu li a:hover {
+    color: #1C3D5F;
+}
+
 /* Profile
 ------------------------------- */
 header {
     background: #88A5AA;
+}
+
+header h1 {
+    float: left;
+    width: 90%;
+}
+
+header h2 {
+    clear: left;
 }
 
 /* Projects
