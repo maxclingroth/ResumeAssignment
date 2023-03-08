@@ -58,9 +58,30 @@ h1, h2 {
 }
 
 .content-wrap {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     padding: 60px;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+.item-details h3 + p {
+    font-style: italic;
+}
+
+.item-details h3 ~ p {
+    margin: 0;
+}
+
+.divider > section {
+    border-bottom: 1px dashed black;
+    padding: 20px 0;
+}
+
+.divider > section:last-of-type {
+    border-bottom: none;
 }
 
 /* Navigation
@@ -91,7 +112,6 @@ h1, h2 {
 nav {
     float: right;
     text-align: center;
-    width: 10%;
     margin: 70px 5% 0 0;
 }
 
@@ -171,15 +191,7 @@ h3 {
 
 .project-item {
     overflow: hidden;
-    border-bottom: 1px dashed black;
-    padding: 20px 0;
 }
-
-.project-item img {
-    float: left;
-    margin-right: 20px;
-}
-
 
 /* Work Experience
 ------------------------------- */
@@ -190,7 +202,9 @@ h3 {
 /* Education
 ------------------------------- */
 .education {
-    background: #5C2751;
+    background-image: url(../images/sand-background.jpg);
+    background-size: cover;
+    padding-bottom: 30px;
     color: #FFF5F8;
 }
 
@@ -199,4 +213,52 @@ h3 {
 footer {
     background: #1C3D5F;
     color: #FFF5F8;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+}
+
+/* Responsive
+------------------------------- */
+@media screen and (min-width: 750px) {
+    header, footer {
+        text-align: center;
+    }
+
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h1, h2 {
+        line-height: 1;
+    }
+
+    .contact-list a {
+        padding: 5px;
+    }
 }
